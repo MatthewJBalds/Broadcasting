@@ -21,7 +21,13 @@ public class UIControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+    }
+
+    public void Input()
+    {
         NUM_SPAWNS = int.Parse(numberInput.text);
+        
     }
 
     public void OnSpawbBallsClicked()
@@ -37,5 +43,12 @@ public class UIControls : MonoBehaviour
         Parameters Param = new Parameters();
         Param.PutExtra(CubeSpawner.CUBE_SPAWNS_KEY, NUM_SPAWNS);
         EventBroadcaster.Instance.PostEvent(EventNames.S23_Events.ON_SPAWN_CUBE_BUTTON_CLICKED, Param);
+    }
+
+    public void onMainMenuButtonClicked()
+    {
+        Parameters Param = new Parameters();
+        EventBroadcaster.Instance.PostEvent(EventNames.S23_Events.ON_MAIN_MENU_BUTTON_PRESSED, Param);
+
     }
 }

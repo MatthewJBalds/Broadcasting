@@ -55,6 +55,7 @@ public class EventNames {
 	{
 		public const string ON_SPAWN_BUTTON_CLICKED = "ON_SPAWN_BUTTON_CLICKED";
         public const string ON_SPAWN_CUBE_BUTTON_CLICKED = "ON_SPAWN_CUBE_BUTTON_CLICKED";
+		public const string ON_MAIN_MENU_BUTTON_PRESSED = "ON_MAIN_MENU_BUTTON_PRESSED";
 
 
     }
